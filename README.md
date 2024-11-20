@@ -15,4 +15,19 @@ For reduced death rates and disease prevalence, early and accurate diagnosis of 
 
 Out of various machine learning models and deep learning networks it was found that Fully Connected Neural Networks (FCNN) had the highest accuracy in predicting lung cancer with an accuracy of 98.75%. The best matching case file is determined based on TPM similarity, this provides more insights on the case and helps in faster diagnosis. This framework bridges the gap between complex computational workflows and clinical usability, enabling healthcare professionals and researchers to make data-driven decisions more effectively by incorporating robust client-server architecture.
 
+### Docker
+Don't want the old fashioned building and running the code in your local machine to use the tool?
+
+We got you covered
+```bash
+docker pull shashankr87/lung_cancer_api
+docker run -p 8000:8000 --name lung_cancer_backend shashankr87/lung_cancer_api
+```
+```bash
+docker pull shashankr87/lung_cancer
+docker run -p 3000:3000 --name lung_cancer_frontend shashankr87/lung_cancer
+```
+Open up http://localhost:3000 and you are ready to go!
+
+### Gallery
 ![image](https://github.com/user-attachments/assets/4ce62bc4-e4a7-4ee2-b6be-ee4301f6a348)
